@@ -204,6 +204,20 @@
     cursor: pointer;
   }
 
+  .new {
+    position: absolute;
+    right: 0;
+    background-color: var(--color-tertiary);
+    margin: 0.8rem 1.5rem 1.5rem 1.5rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+  }
+
+  .new span {
+    font-weight: 900;
+    opacity: 0.5;
+  }
+
   #la_palette_du_gout {
     background-image: url("./Maquettes_Ohmyfood/images/restaurants/la_palette_du_gout.jpg");
     background-size: cover;
