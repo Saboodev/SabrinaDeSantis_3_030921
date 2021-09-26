@@ -1,0 +1,19 @@
+{
+  "name": "p3_ohmyfood",
+  "version": "1.0.0",
+  "description": "Réservez le menu qui vous convient",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saboodev/SabrinaDeSantis_3_030921.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saboodev/SabrinaDeSantis_3_030921/issues"
+  },
+  "homepage": "https://github.com/Saboodev/SabrinaDeSantis_3_030921#readme"
+}
