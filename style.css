@@ -188,16 +188,18 @@ input[type=text]::placeholder {
   height: 10rem;
   min-width: 50rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-  color: white;
-  background: #ff79da;
-  background: -moz-linear-gradient(-45deg, #ff79da 0%, #9356dc 100%);
-  background: -webkit-linear-gradient(-45deg, #ff79da 0%, #9356dc 100%);
-  background: linear-gradient(135deg, #ff79da 0%, #9356dc 100%);
+  color: #ffffff;
+  background: -webkit-linear-gradient(var(--color-secondary), var(--color-primary));
   font-weight: 400;
   font-size: 16px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.button_explore:hover {
+  background: linear-gradient(356deg, #a86ee0 0%, #ff93e1 100%);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Functioning */
@@ -207,9 +209,22 @@ input[type=text]::placeholder {
   justify-content: start;
   padding: 1rem;
 }
+@media screen and (min-width: 880px) {
+  #functioning {
+    padding-top: 0;
+  }
+}
 
 .list_button_functioning {
   margin-left: 0.5rem;
+}
+@media screen and (min-width: 880px) {
+  .list_button_functioning {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
 }
 
 .functioning_card {
@@ -224,6 +239,12 @@ input[type=text]::placeholder {
   font-size: 1rem;
   font-weight: 700;
   width: 100%;
+}
+@media screen and (min-width: 880px) {
+  .functioning_card {
+    height: 80px;
+    width: auto;
+  }
 }
 
 .number {
@@ -251,6 +272,11 @@ input[type=text]::placeholder {
 .button_functioning {
   padding: 1rem;
 }
+@media screen and (min-width: 880px) {
+  .button_functioning {
+    padding: 0;
+  }
+}
 
 .button_functioning > i {
   color: #6d6d6d;
@@ -263,8 +289,7 @@ input[type=text]::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem 1rem 3rem 1rem;
   background-color: #f6f6f6;
 }
 
@@ -274,6 +299,15 @@ input[type=text]::placeholder {
   margin-bottom: 1rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+@media screen and (min-width: 880px) {
+  #container_restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 .new {
@@ -326,6 +360,12 @@ input[type=text]::placeholder {
   border-radius: 20px 20px 0 0;
 }
 
+@media screen and (min-width: 1000px) {
+  #la_palette_du_gout, #la_note_enchantee, #a_la_francaise, #le_delice_des_sens {
+    height: 15rem;
+  }
+}
+
 .block_description {
   display: flex;
   align-items: center;
@@ -353,10 +393,23 @@ input:checked ~ .fas {
   opacity: 1;
   font-weight: 800;
   background: -webkit-linear-gradient(-45deg, #ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: heartchecked;
 }
 
+@keyframes heartchecked {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .clic_heart > input {
   appearance: none;
 }
@@ -393,7 +446,7 @@ footer h2 {
 }
 
 .list_footer i {
-  width: 10%;
+  width: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
