@@ -196,6 +196,9 @@ input[type=text]::placeholder {
   align-items: center;
   cursor: pointer;
 }
+.button_explore:visited {
+  color: white;
+}
 .button_explore:hover {
   background: linear-gradient(356deg, #a86ee0 0%, #ff93e1 100%);
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
@@ -299,6 +302,7 @@ input[type=text]::placeholder {
   margin-bottom: 1rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  position: relative;
 }
 
 @media screen and (min-width: 880px) {
@@ -394,19 +398,25 @@ input:checked ~ .fas {
   font-weight: 800;
   background: -webkit-linear-gradient(-45deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: heartchecked;
+  animation: heartchecked 0.8s Linear both;
 }
 
 @keyframes heartchecked {
   0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
     opacity: 0;
   }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
     opacity: 1;
   }
 }
