@@ -51,6 +51,8 @@ a, a:visited {
 }
 
 input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -88,7 +90,7 @@ input {
 .picture_food__la_palette {
   background-image: url("./Maquettes_Ohmyfood/images/restaurants/la_palette_du_gout.jpg");
   background-size: cover;
-  background-position: 50% 10%;
+  background-position: 50% 50%;
   height: 28rem;
   width: 100%;
 }
@@ -104,7 +106,7 @@ input {
 .picture_food__le_delice {
   background-image: url("./Maquettes_Ohmyfood/images/restaurants/le_delice_des_sens.jpg");
   background-size: cover;
-  background-position: 50% 10%;
+  background-position: 50% 50%;
   height: 28rem;
   width: 100%;
 }
@@ -112,7 +114,7 @@ input {
 .picture_food__a_la_francaise {
   background-image: url("./Maquettes_Ohmyfood/images/restaurants/a_la_francaise.jpg");
   background-size: cover;
-  background-position: 50% 10%;
+  background-position: 40% 50%;
   height: 28rem;
   width: 100%;
 }
@@ -150,9 +152,27 @@ input:checked ~ .fa-heart {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: heartchecked 0.8s Linear both;
   animation: heartchecked 0.8s Linear both;
 }
 
+@-webkit-keyframes heartchecked {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes heartchecked {
   0% {
     opacity: 0;
@@ -191,15 +211,35 @@ input:checked ~ .fa-heart {
 }
 
 .main_section .starter {
-  animation: appear 0s Linear both;
+  -webkit-animation: appear 1s Linear both;
+  animation: appear 1s Linear both;
 }
 .main_section .dish {
-  animation: appear 1.5s Linear both;
+  -webkit-animation: appear 2.5s Linear both;
+  animation: appear 2.5s Linear both;
 }
 .main_section .dessert {
-  animation: appear 3s Linear both;
+  -webkit-animation: appear 4s Linear both;
+  animation: appear 4s Linear both;
 }
 
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes appear {
   0% {
     opacity: 0;
@@ -239,6 +279,7 @@ input:checked ~ .fa-heart {
 }
 
 .menu_details:hover i {
+  -webkit-animation: rotate;
   animation: rotate;
   transform: scaleX(1);
   transition: transform ease-in-out;
@@ -282,7 +323,7 @@ input:checked ~ .fa-heart {
 
 .choice_ok {
   width: 5rem;
-  height: 100%;
+  height: 100vh;
   background: var(--color-tertiary);
   transition-duration: 1s;
   transition-timing-function: ease;
@@ -308,6 +349,14 @@ input:checked ~ .fa-heart {
   transform: rotate(0deg);
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes rotate {
   0% {
     transform: rotate(180deg);
@@ -337,7 +386,6 @@ input:checked ~ .fa-heart {
 }
 .button_order:hover {
   background: linear-gradient(356deg, #a86ee0 0%, #ff93e1 100%);
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 

@@ -87,6 +87,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  min-width: 309px;
 }
 
 h1 {
@@ -178,7 +179,7 @@ input[type=text]::placeholder {
 }
 
 .container_button {
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 .button_explore {
