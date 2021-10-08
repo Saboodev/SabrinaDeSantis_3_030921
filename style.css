@@ -90,22 +90,38 @@ body {
   min-width: 309px;
 }
 
-h1 {
+.top_title {
   margin: 1.5rem auto 0.6rem;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-h2 {
+.title_section {
   font-weight: 800;
   font-size: 1.5rem;
   margin: 1.5rem 0 1rem 0;
 }
 
-h3 {
+h4 {
   margin-bottom: 0.4rem;
   font-size: 1rem;
   font-weight: 800;
+}
+
+.title_name_restau {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.title_menu_part {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 1.5rem 0 1rem 0;
+  color: #424242;
+  border-bottom: 3px solid var(--color-tertiary);
+  padding-bottom: 0.5rem;
+  width: 2.5rem;
 }
 
 p {
@@ -116,6 +132,7 @@ p {
 a, a:visited {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 /* Header */
@@ -127,9 +144,20 @@ a, a:visited {
   text-align: center;
 }
 
-#logo img {
+#logo .main_logo {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 500;
   width: 10rem;
-  height: 3rem;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  display: inline-block;
+  margin: 0.3rem 0;
+}
+
+#logo i {
+  float: left;
+  margin: 1rem 0 0 1rem;
 }
 
 /* Searchbar */
@@ -154,6 +182,9 @@ a, a:visited {
 input {
   border: none;
   background-color: #f1f1f1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type=text]::placeholder {
@@ -178,7 +209,7 @@ input[type=text]::placeholder {
   padding: 1rem 1rem 2rem 1rem;
 }
 
-.container_button {
+.first_button {
   margin: 2rem 0;
 }
 
@@ -243,6 +274,13 @@ input[type=text]::placeholder {
   font-size: 1rem;
   font-weight: 700;
   width: 100%;
+}
+.functioning_card:hover {
+  background: #f5edff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.functioning_card:hover .button_functioning i {
+  color: var(--color-primary);
 }
 @media screen and (min-width: 880px) {
   .functioning_card {
@@ -382,7 +420,7 @@ input[type=text]::placeholder {
   cursor: pointer;
 }
 
-.clic_heart > i {
+.clic_heart1 > i {
   color: #6d6d6d;
   display: flex;
   justify-content: flex-end;
@@ -393,7 +431,17 @@ input[type=text]::placeholder {
   padding-bottom: 1rem;
 }
 
-input:checked ~ .fas {
+.clic_heart > i {
+  color: #6d6d6d;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: -2rem;
+}
+
+input:checked ~ .fa-heart {
   transition-duration: 0.5s;
   opacity: 1;
   font-weight: 800;
@@ -401,6 +449,7 @@ input:checked ~ .fas {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: heartchecked 0.8s Linear both;
   animation: heartchecked 0.8s Linear both;
 }
 
@@ -421,7 +470,24 @@ input:checked ~ .fas {
     opacity: 1;
   }
 }
-.clic_heart > input {
+@-webkit-keyframes heartchecked {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.clic_heart > input, .clic_heart1 > input {
   appearance: none;
 }
 
@@ -443,10 +509,13 @@ input:checked ~ .fas {
   margin-bottom: 2rem;
 }
 
-footer h2 {
+h5 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 500;
-  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: white;
+  border-bottom: transparent;
+  margin: 1.5rem 0 1rem 0;
 }
 
 .list_footer > a {
@@ -458,6 +527,287 @@ footer h2 {
 
 .list_footer i {
   width: 2rem;
+}
+
+/**** page menu ****/
+.heart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 100;
+  color: #6d6d6d;
+  margin-right: 1.5rem;
+}
+
+/* Main picture */
+.picture_food__la_palette {
+  background-image: url("./Maquettes_Ohmyfood/images/restaurants/la_palette_du_gout.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 28rem;
+  width: 100%;
+}
+
+.picture_food__la_note {
+  background-image: url("./Maquettes_Ohmyfood/images/restaurants/la_note_enchantee.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 28rem;
+  width: 100%;
+}
+
+.picture_food__le_delice {
+  background-image: url("./Maquettes_Ohmyfood/images/restaurants/le_delice_des_sens.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 28rem;
+  width: 100%;
+}
+
+.picture_food__a_la_francaise {
+  background-image: url("./Maquettes_Ohmyfood/images/restaurants/a_la_francaise.jpg");
+  background-size: cover;
+  background-position: 40% 50%;
+  height: 28rem;
+  width: 100%;
+}
+
+/* Main section */
+@media screen and (min-width: 1000px) {
+  .menu_page {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#title_icon {
+  align-content: start;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*** menu card ***/
+.main_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 50px 50px 0 0;
+  padding: 2rem 1rem 1rem 1rem;
+  margin-top: -3rem;
+  background-color: #f6f6f6;
+}
+@media screen and (min-width: 1000px) {
+  .main_section {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .list_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main_section .starter {
+  -webkit-animation: appear 1s Linear both;
+  animation: appear 1s Linear both;
+}
+@media screen and (min-width: 1000px) {
+  .main_section .starter {
+    width: 30%;
+  }
+}
+.main_section .dish {
+  -webkit-animation: appear 2.5s Linear both;
+  animation: appear 2.5s Linear both;
+}
+@media screen and (min-width: 1000px) {
+  .main_section .dish {
+    width: 30%;
+  }
+}
+.main_section .dessert {
+  -webkit-animation: appear 4s Linear both;
+  animation: appear 4s Linear both;
+}
+@media screen and (min-width: 1000px) {
+  .main_section .dessert {
+    width: 30%;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu_details {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  margin: 1rem 0;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 0 1rem 1rem 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.menu_details:hover .choice_ok {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transform: scaleX(1);
+  transition-timing-function: ease-in-out;
+}
+
+.menu_details:hover i {
+  -webkit-animation: rotate;
+  animation: rotate;
+  transform: scaleX(1);
+  transition: transform ease-in-out;
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+
+.text_menu {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.text_menu p {
+  font-weight: 300;
+  color: #424242;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
+}
+.text_menu .price {
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: black;
+  width: 20%;
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.menu_details:hover .price {
+  margin-right: 5rem;
+  transition: 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+.choice_ok {
+  width: 5rem;
+  height: 100vh;
+  background: var(--color-tertiary);
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  position: absolute;
+  right: 0;
+  top: 0rem;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.choice_ok > i {
+  background-color: var(--color-tertiary);
+  color: white;
+  width: 3rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition-duration: 1s;
+  display: flex;
+  justify-content: center;
+  margin: 1.1rem;
+  transform: scaleX(0);
+  transform: rotate(0deg);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container_button {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container_button > a {
+  color: white;
+}
+
+.button_order {
+  border-radius: 30px;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background: -webkit-linear-gradient(var(--color-secondary), var(--color-primary));
+  font-weight: 400;
+  cursor: pointer;
+}
+.button_order:hover {
+  background: linear-gradient(356deg, #a86ee0 0%, #ff93e1 100%);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
