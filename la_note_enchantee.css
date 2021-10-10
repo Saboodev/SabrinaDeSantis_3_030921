@@ -85,11 +85,11 @@ input {
 }
 
 /* Main picture */
-.picture_food {
+.picture_food__la_note {
   background-image: url("./Maquettes_Ohmyfood/images/restaurants/la_note_enchantee.jpg");
   background-size: cover;
   background-position: 50% 50%;
-  height: 22rem;
+  height: 28rem;
   width: 100%;
 }
 
