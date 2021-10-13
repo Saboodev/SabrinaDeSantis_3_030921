@@ -285,7 +285,7 @@ $bg-color_light-grey: #f6f6f6;
     font-weight: 700;
     width: 100%;
     &:hover {
-      background: #f2f2f2;
+      background: #f5edff;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     }
     &:hover .button_functioning i {
@@ -375,7 +375,7 @@ $bg-color_light-grey: #f6f6f6;
   }
 
   #la_palette_du_gout {
-    background-image: url("./Maquettes_Ohmyfood/images/restaurants/la_palette_du_gout.jpg");
+    background-image: url("../Maquettes_Ohmyfood/images/restaurants/la_palette_du_gout.jpg");
     background-size: cover;
     background-position: 50% 60%;
     height: $height_picture_index;
@@ -384,7 +384,7 @@ $bg-color_light-grey: #f6f6f6;
   }
 
   #la_note_enchantee {
-    background-image: url("./Maquettes_Ohmyfood/images/restaurants/la_note_enchantee.jpg");
+    background-image: url("../Maquettes_Ohmyfood/images/restaurants/la_note_enchantee.jpg");
     background-size: cover;
     background-position: 50% 60%;
     height: $height_picture_index;
@@ -393,7 +393,7 @@ $bg-color_light-grey: #f6f6f6;
   }
 
   #a_la_francaise {
-    background-image: url("./Maquettes_Ohmyfood/images/restaurants/a_la_francaise.jpg");
+    background-image: url("../Maquettes_Ohmyfood/images/restaurants/a_la_francaise.jpg");
     background-size: cover;
     background-position: 50% 60%;
     height: $height_picture_index;
@@ -402,7 +402,7 @@ $bg-color_light-grey: #f6f6f6;
   }
 
   #le_delice_des_sens {
-    background-image: url("./Maquettes_Ohmyfood/images/restaurants/le_delice_des_sens.jpg");
+    background-image: url("../Maquettes_Ohmyfood/images/restaurants/le_delice_des_sens.jpg");
     background-size: cover;
     background-position: 50% 60%;
     height: $height_picture_index;
@@ -555,7 +555,7 @@ $bg-color_light-grey: #f6f6f6;
   /* Main picture */
 
   .picture_food__la_palette {
-    background-image: url("./Maquettes_Ohmyfood/images/restaurants/la_palette_du_gout.jpg");
+    background-image: url("../Maquettes_Ohmyfood/images/restaurants/la_palette_du_gout.jpg");
     background-size: cover;
     background-position: 50% 50%;
     height: $height_picture_menu;
@@ -563,7 +563,7 @@ $bg-color_light-grey: #f6f6f6;
   }
 
   .picture_food__la_note {
-    background-image: url("./Maquettes_Ohmyfood/images/restaurants/la_note_enchantee.jpg");
+    background-image: url("../Maquettes_Ohmyfood/images/restaurants/la_note_enchantee.jpg");
     background-size: cover;
     background-position: 50% 50%;
     height: $height_picture_menu;
@@ -571,7 +571,7 @@ $bg-color_light-grey: #f6f6f6;
   }
 
   .picture_food__le_delice {
-    background-image: url("./Maquettes_Ohmyfood/images/restaurants/le_delice_des_sens.jpg");
+    background-image: url("../Maquettes_Ohmyfood/images/restaurants/le_delice_des_sens.jpg");
     background-size: cover;
     background-position: 50% 50%;
     height: $height_picture_menu;
@@ -579,7 +579,7 @@ $bg-color_light-grey: #f6f6f6;
   }
   
   .picture_food__a_la_francaise {
-    background-image: url("./Maquettes_Ohmyfood/images/restaurants/a_la_francaise.jpg");
+    background-image: url("../Maquettes_Ohmyfood/images/restaurants/a_la_francaise.jpg");
     background-size: cover;
     background-position: 40% 50%;
     height: $height_picture_menu;

@@ -3,73 +3,56 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="./CSS/style.css"/>
         <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
-        
-        <title>Ohmyfood</title>
-
-        
-    </head>
-    
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">  
+        <title>Ohmyfood</title>      
+    </head>  
     <body>
-
-            <div class="loader">
-                <div class="dots">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <span>Chargement...</span>
+        <div class="loader">
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-
-      	    <header>
-                
-                <div id="logo">
-                    <h1 class="main_logo">Ohmyfood</h1>
-                </div> 
-                
-            </header>
-
-            <main>
-
-                <!--Searchbar-->
-
-                <form id="location">
-                    <div id="icone_location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                        <input type="text" name="recherche" placeholder="Paris, Belleville"></div>
-                </form>
-                
-                <!--presentation-->
-
-                <section class="first_container">
-
-                    <div class="content_container">
+            <span>Chargement...</span>
+        </div>
+      	<header>    
+            <div id="logo">
+                <h1 class="main_logo">Ohmyfood</h1>
+            </div>         
+        </header>
+        <main>
+            <!--Searchbar-->
+            <form id="location">
+                <div id="icone_location">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <input type="text" name="recherche" placeholder="Paris, Belleville">
+                </div>
+            </form>       
+            <!--presentation-->
+            <section class="first_container">
+                <div class="content_container">
                     <h2 class="top_title">Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                     <div class="first_button">
                         <a class="button_explore" href="#restaurants">Explorer nos restaurants</a>
                     </div>
-                    </div>
-
-                </section>
-
-                <!--functioning-->
-                
-                <section id="functioning">
-
-                    <div class="functioning_container">
+                </div>
+            </section>
+            <!--functioning-->               
+            <section id="functioning">
+                <div class="functioning_container">
                     <h3 class="title_section">Fonctionnement</h3>
-
                     <div class="list_button_functioning">
                         <div class="functioning_card">
                             <div class="number">
@@ -80,7 +63,6 @@
                                 <span class="button_function">Choisissez un restaurant</span>
                             </a>                     
                         </div>
-
                         <div class="functioning_card">
                             <div class="number">
                                 <span>2</span>
@@ -90,7 +72,6 @@
                                 <span class="button_function">Composez votre menu</span>
                             </a>                     
                         </div>
-
                         <div class="functioning_card">
                             <div class="number">
                                 <span>3</span>
@@ -100,30 +81,24 @@
                                 <span class="button_function">Dégustez au restaurant</span>
                             </a>                     
                         </div>
-
                     </div>
-
-                    </div>
-
-                </section>
-
-                <section id="restaurants">
-
-                    <h3 class="title_section">Restaurants</h3>
-
-                    <div id="container_restaurants">
-                        <div class="restaurant">
-                            <div class="new">
-                                <span>Nouveau</span>
-                            </div>
-                            <a href="./la_palette_du_gout.html">
+                </div>
+            </section>
+            <section id="restaurants">
+                <h3 class="title_section">Restaurants</h3>
+                <div id="container_restaurants">
+                    <div class="restaurant">
+                        <div class="new">
+                            <span>Nouveau</span>
+                        </div>
+                        <a href="./HTML/la_palette_du_gout.html">
                             <div id="la_palette_du_gout"></div>
-                            </a>
-                            <div class="block_description">
+                        </a>
+                        <div class="block_description">
                             <div class="restau_description">
-                                <a href="./la_palette_du_gout.html">
-                                <h4 class="title_card_index">La palette du goût</h4>
-                                <p>Ménilmontant</p>
+                                <a href="./HTML/la_palette_du_gout.html">
+                                    <h4 class="title_card_index">La palette du goût</h4>
+                                    <p>Ménilmontant</p>
                                 </a>
                             </div>  
                             <div class="index_heart">
@@ -132,21 +107,20 @@
                                     <i class="fas fa-heart"></i>
                                 </label>
                             </div>
-                            </div>
                         </div>
-
-                        <div class="restaurant">
-                            <div class="new">
-                                <span>Nouveau</span>
-                            </div>
-                            <a href="./la_note_enchantee.html">
+                    </div>
+                    <div class="restaurant">
+                        <div class="new">
+                            <span>Nouveau</span>
+                        </div>
+                        <a href="./HTML/la_note_enchantee.html">
                             <div id="la_note_enchantee"></div>
-                            </a>
-                            <div class="block_description">
+                        </a>
+                        <div class="block_description">
                             <div class="restau_description">
-                                <a href="./la_note_enchantee.html">
-                                <h4 class="title_card_index">La note enchantée</h4>
-                                <p>Charonne</p>
+                                <a href="./HTML/la_note_enchantee.html">
+                                    <h4 class="title_card_index">La note enchantée</h4>
+                                    <p>Charonne</p>
                                 </a>
                             </div>
                             <div class="index_heart">
@@ -154,70 +128,68 @@
                                     <input type="checkbox" name="like">
                                     <i class="fas fa-heart"></i>
                                 </label>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="restaurant">
-                            <a href="./a_la_francaise.html">
-                            <div id="a_la_francaise"></div>
-                            </a>
-                            <div class="block_description">
-                            <div class="restau_description">
-                                <a href="./a_la_francaise.html">
-                                <h4 class="title_card_index">À la française</h4>
-                                <p>Cité Rouge</p>
-                                </a>
-                            </div>
-                            <div class="index_heart">
-                                <label class="clic_heart1" >
-                                    <input type="checkbox" name="like">
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="restaurant">
-                            <a href="./le_delice_des_sens.html">
-                            <div id="le_delice_des_sens"></div>
-                            </a>
-                            <div class="block_description">
-                            <div class="restau_description">
-                                <a href="./le_delice_des_sens.html">
-                                <h4 class="title_card_index">Le délice des sens</h4>
-                                <p>Folie-Méricourt</p>
-                                </a>
-                            </div>
-                            <div class="index_heart">
-                                <label class="clic_heart1" >
-                                    <input type="checkbox" name="like">
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                            </div>
                             </div>
                         </div>
                     </div>
-                </section>
-
-            </main>
-
-            <!--Footer-->
-
-            <footer>
-
-                <div id="container_footer">    
-                    <div class="list_footer">
-                        <h5>ohmyfood</h5>
-                        <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-                        <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
-                        <a href="#">Mentions légales</a>
-                        <a href="mailto:no_reply@ohmyfood.com">Contact</a>
+                    <div class="restaurant">
+                        <a href="./HTML/a_la_francaise.html">
+                            <div id="a_la_francaise"></div>
+                        </a>
+                        <div class="block_description">
+                            <div class="restau_description">
+                                <a href="./HTML/a_la_francaise.html">
+                                    <h4 class="title_card_index">À la française</h4>
+                                    <p>Cité Rouge</p>
+                                </a>
+                            </div>
+                            <div class="index_heart">
+                                <label class="clic_heart1" >
+                                    <input type="checkbox" name="like">
+                                    <i class="fas fa-heart"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant">
+                        <a href="./HTML/le_delice_des_sens.html">
+                            <div id="le_delice_des_sens"></div>
+                        </a>
+                        <div class="block_description">
+                            <div class="restau_description">
+                                <a href="./HTML/le_delice_des_sens.html">
+                                    <h4 class="title_card_index">Le délice des sens</h4>
+                                    <p>Folie-Méricourt</p>
+                                </a>
+                            </div>
+                            <div class="index_heart">
+                                <label class="clic_heart1" >
+                                    <input type="checkbox" name="like">
+                                    <i class="fas fa-heart"></i>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
-            </footer>
-    
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div id="container_footer">    
+                <div class="list_footer">
+                    <h5>ohmyfood</h5>
+                    <a href="#">
+                        <i class="fas fa-utensils"></i>
+                        Proposer un restaurant
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-hands-helping"></i>
+                        Devenir partenaire
+                    </a>
+                    <a href="#">Mentions légales</a>
+                    <a href="mailto:no_reply@ohmyfood.com">Contact</a>
+                </div>
+            </div>
+        </footer> 
     </body>
 </html>
                         
